@@ -3,7 +3,14 @@
 
 }
 
+a:link {
+    text-decoration: none;
+    color: white;
+}
 
+a:visited {
+    text-decoration: none;
+}
 
 nav {
     display: flex;
@@ -17,15 +24,23 @@ nav {
 
 }
 
-#nav-list {
+nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-around;
     list-style: none;
     width: 300px;
+    text-decoration: none;
+    color: white;
 }
 
 #nav-list a {
     padding: 20px;
+    
+}
+
+nav a {
+    color: white;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -38,6 +53,7 @@ h1 h2 h3 h4 h5 h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 li {
@@ -48,17 +64,31 @@ li {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 2rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
   }
 
+  .projects-grid img {
+    width: 100%;
+  }
 
 
   @media screen and (max-width: 480px) {
     body {
       background-color: lightgreen;
     }
+  }
+
+  h2 {
+      display: flex;
+      justify-content: center;
+  }
+
+  .contact img {
+      width: 50%;
+      display: flex;
+      justify-content: center;
   }
